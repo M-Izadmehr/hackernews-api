@@ -1,0 +1,160 @@
+.comp-storyCard {
+  height: 150px;
+  grid-column: span 1;
+  grid-row: span 1;
+  transition: 0.3s;
+  position: relative;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  // The style when it is open
+  &.open {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 325px;
+    &::after {
+      opacity: 0.6;
+    }
+    .data-container .has-data .data {
+      justify-content: flex-start;
+      .story-text {
+        margin-top: 10px;
+        overflow: auto;
+      }
+      .story-title {
+        max-width: inherit;
+      }
+    }
+    // style of loading template
+    .loading-card {
+      height: 325px;
+      .loading-text {
+        width: 500px;
+      }
+    }
+  }
+
+  // style of Bg image
+  &::after {
+    content: '';
+    position: absolute;
+    transition: 0.3s ease-out;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://image.freepik.com/free-vector/bright-background-with-dots_1055-3132.jpg);
+    transform: rotate(-180deg);
+    background-size: cover;
+    pointer-events: none;
+    opacity: 0.2;
+  }
+
+  // style of card data-container
+  .data-container {
+    height: 100%;
+    .has-data {
+      .data {
+        z-index: 1;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 20px;
+        .story-text {
+          font-family: Georgia, Times, 'Times New Roman', serif;
+        }
+        .score-badge {
+          position: absolute;
+          right: 0;
+          top: 0;
+          border-radius: 0 0 100% 100%;
+          background-color: #231f20;
+          color: #ddd;
+          width: 40px;
+          text-align: center;
+          height: 40px;
+          font-size: 12px;
+          padding: 3px;
+          .outline {
+            border: 2px solid #b6985a;
+            height: 100%;
+            padding: 5px 0;
+            border-radius: 0 0 100% 100%;
+
+          }
+        }
+        .story-title {
+          max-width: 200px;
+        }
+        h5, small, p {
+          margin: 0;
+          line-height: 1.4em;
+        }
+      }
+      &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18), 0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+    }
+  }
+
+  // style of visibility sensor filling component
+  .vis-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  // style of loading template
+  &.loading-card {
+    .loading-badge {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-radius: 0 0 100% 100%;
+      background-color: #aaaaaa;
+      width: 40px;
+      height: 40px;
+    }
+    .loading-title {
+      position: absolute;
+      left: 10px;
+      top: 20px;
+      border-radius: 5px;
+      background-color: #bbb;
+      width: 200px;
+      max-width: 70%;
+      height: 35px;
+    }
+    .loading-author {
+      position: absolute;
+      left: 10px;
+      top: 63px;
+      border-radius: 3px;
+      background-color: #bbb;
+      width: 110px;
+      height: 13px;
+    }
+    .loading-text {
+      position: absolute;
+      border-radius: 4px;
+      background-color: #bbb;
+      width: 250px;
+      max-width: 90%;
+      height: 17px;
+      left: 10px;
+      &.first {
+        top: 93px;
+      }
+      &.second {
+        top: 120px;
+      }
+
+    }
+  }
+
+}
