@@ -1,6 +1,8 @@
 
 # HackerNews
-A simple wrapper around HackerNews Api
+A simple wrapper around HackerNews Api. 
+
+Working demo of project can be found at: https://m-izadmehr.github.io/hackernews-api/
 
 ## Initialization
 
