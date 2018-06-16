@@ -2,8 +2,13 @@
 # HackerNews
 A simple wrapper around HackerNews Api. 
 
-Working demo of project can be found at: https://m-izadmehr.github.io/hackernews-api/
+## Demo
 
+Working demo of project can be found at: 
+
+**https://m-izadmehr.github.io/hackernews-api/**
+
+![HackerNews HackerNews](https://raw.githubusercontent.com/M-Izadmehr/hackernews-api/master/projectView.jpg)
 ## Initialization
 
 ```Shell
