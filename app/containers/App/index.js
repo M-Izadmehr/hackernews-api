@@ -11,8 +11,8 @@ export default function App() {
     <div>
       <Header />
       <Switch>
-        <Route exact path="/" component={InfiniteScroll} />
-        <Route exact path="/SinglePageConcurrent" component={SinglePageConcurrent} />
+        <Route exact path="/hackernews-api/" component={InfiniteScroll} />
+        <Route exact path="/hackernews-api/SinglePageConcurrent" component={SinglePageConcurrent} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer />

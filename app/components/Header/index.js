@@ -10,10 +10,10 @@ const Header = () => (
       Top Stories
     </div>
     <div className="links-container">
-      <Link to="/">
+      <Link to="/hackernews-api/">
         <div className="link">Infinite Scroll Template</div>
       </Link>
-      <Link to="/SinglePageConcurrent">
+      <Link to="/hackernews-api/SinglePageConcurrent">
         <div className="link">Lazy Complete Page</div>
       </Link>
     </div>

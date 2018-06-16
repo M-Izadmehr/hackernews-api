@@ -30,7 +30,7 @@ class HomePage extends React.PureComponent {
 
   renderLoading = () => (
     <div className="loading-spinner">
-      <img src={Spinner} alt="loading..." title="loading..." width="100" height="100" />
+      <img src="https://loading.io/spinners/double-ring/lg.double-ring-spinner.gif" alt="loading..." title="loading..." width="100" height="100" />
     </div>
   );
 

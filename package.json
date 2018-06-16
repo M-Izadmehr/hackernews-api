@@ -11,7 +11,7 @@
     "node": ">=5"
   },
   "author": "Mojtaba Izadmehr",
-  "homepage": "http://gitname.github.io/react-gh-pages",
+  "homepage": "http://m-izadmehr.github.io/hackernews-api",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
